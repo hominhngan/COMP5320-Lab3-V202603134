@@ -14,7 +14,7 @@ sequenceDiagram
 
     alt Success (R1-R2)
         Repository-->>Service: committed
-        Service->>Channel: send(contact, "You were assigned: <title>")
+        Service->>Channel: send(contact, "You were assigned: {title}")
         Channel-->>Service: accepted
         Service-->>Caller: assigned task
     else SaveError (R3)
@@ -23,7 +23,7 @@ sequenceDiagram
         Service-->>Caller: propagate SaveError
     else NotificationError (R4)
         Repository-->>Service: committed
-        Service->>Channel: send(contact, "You were assigned: <title>")
+        Service->>Channel: send(contact, "You were assigned: {title}")
         Channel-->>Service: raise NotificationError
         Service->>Service: log warning (task id only, no contact, no retry)
         Service-->>Caller: assigned task (normal return)
