@@ -1,9 +1,12 @@
 # COMP5320 Lab 3: Design, Architecture and Patterns with AI Agents
 
-**Student:** Ho Thi Minh Ngan
-**Student ID:** V202603134
-**Course:** COMP5320 Advanced Software Engineering, Week 3
-**Submission type:** Individual
+| | |
+| --- | --- |
+| **Student** | Ho Thi Minh Ngan |
+| **Student ID** | V202603134 |
+| **Course** | COMP5320 Advanced Software Engineering |
+| **Week** | 3: Software Design, Architecture and Patterns |
+| **Submission type** | Individual |
 
 Dear Professor,
 
